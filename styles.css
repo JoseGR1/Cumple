@@ -1,6 +1,6 @@
 body {
   font-family: Arial, monospace;
-  background: linear-gradient(to bottom, #000000f5, #7affed);
+  background: black;
   text-transform: uppercase;
   margin: 0;
 }
@@ -16,9 +16,11 @@ body {
 }
 
 .countdown-number {
-  font-size: 3.5em;
   font-weight: bold;
   color: #24ffe2; 
+  font-size: 5em;
+  text-shadow: 5px 5px 10px #aaa;
+  animation: shadow-color 3.5s ease-in-out infinite;
 }
 
 .countdown-label {
@@ -26,7 +28,7 @@ body {
   margin-top: 10px;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0px 0px 16px rgb(0, 0, 0);
+  text-shadow: 0px 0px 16px rgb(255, 255, 255);
 }
 
 .countdown-number {
@@ -110,6 +112,7 @@ body {
 }
 
 svg {
+
   position:relative;
   width: 100%;
   height: 100%;
