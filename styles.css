@@ -1,6 +1,6 @@
 body {
   font-family: Arial, monospace;
-  background: black;
+  background: rgb(0, 0, 0);
   text-transform: uppercase;
   margin: 0;
 }
@@ -33,7 +33,6 @@ body {
 
 .countdown-number {
   font-size: 5em;
-  text-shadow: 5px 5px 10px #aaa;
   animation: shadow-color 3.5s ease-in-out infinite;
 }
 
@@ -66,7 +65,7 @@ body {
   stroke-dashoffset: 0;
   -webkit-animation: stroke 6s infinite linear;
   animation: stroke 6s infinite linear;
-  font-size:3.5em;
+  font-size:3.8em;
   text-shadow: 0px 0px 16px rgb(255, 255, 255);
 }
 
@@ -128,7 +127,7 @@ svg {
   stroke-dashoffset: 0;
   -webkit-animation: stroke 6s infinite linear;
   animation: stroke 6s infinite linear;
-  font-size:5em;
+  font-size:6.5em;
   text-shadow: 0px 0px 16px rgb(255, 255, 255);
 }
 
