@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, monospace;
+  background: linear-gradient(to bottom, #000000f5, #7affed);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#countdown {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.countdown-box {
+  display:inline-block;
+  margin: 0 20px;
+}
+
+.countdown-number {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #24ffe2; 
+}
+
+.countdown-label {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 0px 16px rgb(0, 0, 0);
+}
+
+.countdown-number {
+  font-size: 5em;
+  text-shadow: 5px 5px 10px #aaa;
+  animation: shadow-color 3.5s ease-in-out infinite;
+}
+
+@keyframes shadow-color {
+  0% {
+    text-shadow: 5px 5px 10px rgba(116, 0, 170, 0.993);
+  }
+  25% {
+    text-shadow: 5px 5px 10px rgba(204, 108, 248, 0.993);
+  }
+  50% {
+    text-shadow: 5px 5px 10px rgba(239, 216, 250, 0.993);
+  }
+  75% {
+    text-shadow: 5px 5px 10px rgba(204, 94, 255, 0.993);
+  }
+  100% {
+    text-shadow: 5px 5px 10px rgba(132, 4, 192, 0.993);
+  }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  font-size:3.5em;
+  text-shadow: 0px 0px 16px rgb(255, 255, 255);
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #24ffe2;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: rgba(160, 8, 230, 0.993);
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #f864fd;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #fcbff2;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+svg {
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+.text2 {
+
+  display: none;
+  fill: none;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  font-size:5em;
+  text-shadow: 0px 0px 16px rgb(255, 255, 255);
+}
+
+.text2:nth-child(5n + 1) {
+  stroke: #24ffe2;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text2:nth-child(5n + 2) {
+  stroke: rgba(160, 8, 230, 0.993);
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text2:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text2:nth-child(5n + 4) {
+  stroke: #f864fd;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text2:nth-child(5n + 5) {
+  stroke: #fcbff2;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.confetti {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  background-color:#24ffe2;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgb(248, 246, 246);
+  animation: confetti 1s ease-in-out infinite;
+}
+
+@keyframes confetti {
+  from {
+    transform: translate3d(0, -200px, 0) rotate(0deg);
+  }
+  to {
+    transform: translate3d(0, 100vh, 0) rotate(1080deg);
+  }
+}
